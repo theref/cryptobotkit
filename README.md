@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/meatballs/cryptobotkit.svg?branch=master)](https://travis-ci.com/meatballs/cryptobotkit)
+
 # cryptobotkit
 A library of tools for building cryptocurrency trading bots.
 
