@@ -1,12 +1,13 @@
-import attr
 from abc import ABC, abstractmethod
+
+import attr
 
 
 @attr.s
 class Exchange(ABC):
     """An abstract base class with methods to interact with a crypto exchange"""
-    base_url = attr.ib(type=str)
 
+    base_url = attr.ib(type=str)
 
 
 class Strategy(ABC):
