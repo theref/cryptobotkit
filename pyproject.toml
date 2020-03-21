@@ -6,15 +6,15 @@ authors = ["Owen Campbell <owen.campbell@tanti.org.uk>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.6"
-attrs = "^19.3"
-ccxt = "^1.24.70"
+python = ">=3.6"
+attrs = ">=19.3"
+ccxt = ">=1.24.70"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
-isort = "^4.3"
-black = {version = "^18.3-alpha.0", allows-prereleases = true}
-bumpversion = "^0.5.3"
+pytest = ">=5.2"
+isort = ">=4.3"
+black = {version = ">=18.3-alpha.0", allow-prereleases = true}
+bumpversion = ">=0.5.3"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
