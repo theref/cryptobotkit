@@ -6,11 +6,11 @@ def crypto():
     pass
 
 
-@click.command()
+@crypto.command()
 def buy():
     pass
 
 
-@click.command()
+@crypto.command()
 def sell():
     pass
