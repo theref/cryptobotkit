@@ -11,6 +11,17 @@ sys.path.append(root + '/python')
 
 import ccxt  # noqa: E402
 
+binance = ccxt.binanceje()
+symbols = ['BTC', 'ETH', 'LTC']
+base = 'GBP'
+
+def get_top_of_book(symbol, base, exchange):
+    orderbook = exchange.fetch_order_book(f'{symbol}/{base}')
+    bid = orderbook['bids'][0][0] if len(orderbook['bids']) > 0 else None
+    ask = orderbook['asks'][0][0] if len(orderbook['asks']) > 0 else None
+    return bid, ask
+
+
 
 # -----------------------------------------------------------------------------
 
